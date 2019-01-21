@@ -37,7 +37,7 @@ def process(string):
 		driver.find_element_by_class_name("submit").click() # Click on submit button
 	except Exception as e:
 		''' In case Codeforces is too busy or File is untitled.'''
-		sublime.error_message('Some Error Occurred.')
+		sublime.error_message('Either Codeforces is too busy or File is Untitled.')
 
 class SolveItCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
