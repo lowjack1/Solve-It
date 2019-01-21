@@ -1,0 +1,6 @@
+[
+	{
+		"keys": ["super+m"],
+		"command": "solve_it"
+	}
+]

@@ -1,0 +1,6 @@
+[
+	{
+		"keys": ["ctrl+m"],
+		"command": "solve_it"
+	}
+]
