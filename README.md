@@ -2,7 +2,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-Solve_It is a Sublime Text 3 plugin which is used to submit the solution of problems of Codeforces directly from the Sublime Text just by pressing ('CTRL + M') on (Windows or Linux) or (Super + M) key on Mac OS.
+## Solve_It is a Sublime Text 3 plugin which is used to submit the solution of problems of Codeforces directly from the Sublime Text just by pressing ('CTRL + M') on (Windows or Linux) or (Super + M) key on Mac OS.
 
 ## What it does
 Solve_IT gets contest ID and problem Id from user and uses Selenium module of Python to submit currently active file of Sublime Text to Codeforces.
