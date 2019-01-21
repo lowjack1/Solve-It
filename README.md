@@ -15,10 +15,10 @@ Assuming Google Chrome and Python3 is installed in your system.
 <li> Setup Selenium with ChromeDriver.</li>
 <li> In Linux head over to 
     
-    /home/{YOUR USERNAME}/.config/sublime-text-3/Packages/	
+    /home/{YOUR USERNAME}/.config/sublime-text-3/Packages/
    and In Windows 
     
-    C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/' 
+    C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/'
    and paste the cloned repository in this directory. </li>
 <li> Now Setup Chrome so that Selenium may Connect to the existing Chrome Session. </li>
 <ul>
