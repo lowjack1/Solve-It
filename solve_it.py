@@ -26,19 +26,22 @@ def process(string):
 	_chrome_options.add_argument('disable-infobars')
 	_chrome_options.add_argument("--start-maximized")
 	_chrome_options.add_experimental_option("debuggerAddress", executor_url)
-	driver = webdriver.Chrome(chrome_options = _chrome_options)
-	driver.implicitly_wait(30)
-
 	try:
-		driver.get("http://" + url.rstrip())
-		driver.find_element_by_name("sourceFile")
-		driver.find_element_by_css_selector('input[type="file"]').clear()
-		driver.find_element_by_css_selector('input[type="file"]').send_keys(filename.rstrip()) # Send File to Codeforces
-		driver.find_element_by_class_name("submit").click() # Click on submit button
-	except Exception as e:
-		''' In case Codeforces is too busy or File is untitled.'''
-		sublime.error_message('Either Codeforces is too busy or File is Untitled.')
+		driver = webdriver.Chrome(chrome_options = _chrome_options)
+		driver.implicitly_wait(30)
 
+		try:
+			driver.get("http://" + url.rstrip())
+			driver.find_element_by_name("sourceFile")
+			driver.find_element_by_css_selector('input[type="file"]').clear()
+			driver.find_element_by_css_selector('input[type="file"]').send_keys(filename.rstrip()) # Send File to Codeforces
+			driver.find_element_by_class_name("submit").click() # Click on submit button
+		except Exception as e:
+			''' In case Codeforces is too busy or File is untitled.'''
+			sublime.error_message('Either Codeforces is too busy or File is Untitled.')
+	except Exception as e:
+		''' In case Server is not active. '''
+		sublime.error_message('Server is not active.')
 class SolveItCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		window = self.view.window()
