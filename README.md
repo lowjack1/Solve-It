@@ -2,23 +2,26 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-#### Solve_It is a Sublime Text 3 plugin which is used to submit the solution of problems of Codeforces directly from the Sublime Text just by pressing ('CTRL + M') on (Windows or Linux) or (Super + M) key on Mac OS.
+#### Solve It is a Sublime Text 3 plugin which is used to submit the solution of problems of Codeforces directly from the Sublime Text just by pressing ('CTRL + M') on (Windows or Linux) or ('Super + M') key on Mac OS.
 
 ## What it does
-Solve_IT gets contest ID and problem Id from user and uses Selenium module of Python to submit currently active file of Sublime Text to Codeforces.
+Solve IT gets contest ID and problem ID from user and uses Selenium module of Python to submit currently active file of Sublime Text to Codeforces.
 
 ## Set Up Instructions
 
 Assuming Google Chrome and Python3 is installed in your system.
 <ul>
-<li> Clone Solve_It repository in your home directory and open <strong> solve_it.py </strong> and change <strong> pathToPython </strong> by your python lib path.</li>
+<li> Clone Solve-It repository in your home directory. </li>
 <li> Setup Selenium with ChromeDriver.</li>
+<li> Copy urllib3 and selenium module of Python from Python library and paste it to
+             
+`sublime-text-3/Lib/Python3.3` folder. </li>
 <li> In Linux head over to 
     
     /home/{YOUR USERNAME}/.config/sublime-text-3/Packages/
    and In Windows 
     
-    C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/'
+    C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/
    and paste the cloned repository in this directory. </li>
 <li> Now Setup Chrome so that Selenium may Connect to the existing Chrome Session. </li>
 <ul>
@@ -28,7 +31,7 @@ Assuming Google Chrome and Python3 is installed in your system.
 <li> In Linux run this command in your terminal
   
  	google-chrome --remote-debugging-port=9222 --user-data-dir="path/to/Google"
-you can specify any port that is open but if you do then you need to change the <strong> port number </strong> in <strong> solve_it.py </strong> file </li>
+you can specify any port which is open but if you do then you need to change the <strong> port number </strong> in <strong> solve_it.py </strong> file </li>
  	
 <li>This command will open the browser and all the information of your login in Chrome and Codeforces will be Stored there. So you don't need to login when you open this session again. You need to log in only for the first type. </li>
 
