@@ -4,9 +4,7 @@ import os
 import sys
 import time
 
-''' Change this directory name by your python directory '''
-pathToPython = "/home/light/.local/lib/python3.6/site-packages/"
-sys.path.append(pathToPython)
+''' Copy and Paste selinium module and urllib3 module of Python in "sublime-text-3/Lib/Python3.3" folder of sublime-text3 '''
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -42,6 +40,7 @@ def process(string):
 	except Exception as e:
 		''' In case Server is not active. '''
 		sublime.error_message('Server is not active.')
+		
 class SolveItCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		window = self.view.window()
