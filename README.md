@@ -15,7 +15,7 @@ Assuming Google Chrome and Python3 is installed in your system.
 * In Linux head over to `/home/{YOUR USERNAME}/.config/sublime-text-3/Packages/` <br> and in Windows 
 `C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/` <br> and paste the cloned repository in this directory.
 * Now Setup Chrome so that Selenium may Connect to the existing Chrome Session.
-  *	First Make a directory in the desired location with name **Google** and make sure the path to <br> chrome executable is added to the environment variable path.
+  *	First Make a directory in the desired location with name **Google** and make sure the path to chrome executable is added to the environment variable path.
 
   * Now Close all the instances of the Google Chrome.
   * In Linux run this command in your terminal <br>`google-chrome --remote-debugging-port=9222 --user-data-dir="path/to/Google"` <br>
