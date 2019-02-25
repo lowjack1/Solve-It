@@ -1,5 +1,4 @@
-<h1>Solve It </h1><br />
-
+# Solve It
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 #### Solve It is a Sublime Text 3 plugin which is used to submit the solution of problems of Codeforces directly from the Sublime Text just by pressing ('CTRL + M') on (Windows or Linux) or ('Super + M') key on Mac OS.
@@ -10,20 +9,12 @@ Solve IT gets contest ID and problem ID from user and uses Selenium module of Py
 ## Set Up Instructions
 
 Assuming Google Chrome and Python3 is installed in your system.
-<ul>
-<li> Clone Solve-It repository in your home directory. </li>
-<li> Setup Selenium with ChromeDriver.</li>
-<li> Copy urllib3 and selenium module of Python from Python library and paste it to
-             
-`sublime-text-3/Lib/Python3.3` folder. </li>
-<li> In Linux head over to 
-    
-    /home/{YOUR USERNAME}/.config/sublime-text-3/Packages/
-   and In Windows 
-    
-    C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/
-   and paste the cloned repository in this directory. </li>
-<li> Now Setup Chrome so that Selenium may Connect to the existing Chrome Session. </li>
+* Clone Solve-It repository in your home directory.
+* Setup Selenium with ChromeDriver.
+* Copy urllib3 and selenium module of Python from Python library and paste it to `sublime-text-3/Lib/Python3.3` folder.
+* In Linux head over to `/home/{YOUR USERNAME}/.config/sublime-text-3/Packages/`and In Windows 
+`C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/` and paste the cloned repository in this directory.
+* Now Setup Chrome so that Selenium may Connect to the existing Chrome Session. </li>
 <ul>
 <li>	First Make a directory in the desired location with name <strong> Google </strong> and make sure the path to chrome executable is added to the environment variable path. </li>
 
