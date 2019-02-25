@@ -11,16 +11,14 @@ Solve IT gets contest ID and problem ID from user and uses Selenium module of Py
 Assuming Google Chrome and Python3 is installed in your system.
 * Clone Solve-It repository in your home directory.
 * Setup Selenium with ChromeDriver.
-* Copy urllib3 and selenium module of Python from Python library and paste it to `sublime-text-3/Lib/Python3.3` folder.
-* In Linux head over to `/home/{YOUR USERNAME}/.config/sublime-text-3/Packages/`and In Windows 
-`C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/` and paste the cloned repository in this directory.
+* Copy urllib3 and selenium module of Python from Python library and paste it to <br>`sublime-text-3/Lib/Python3.3` folder.
+* In Linux head over to `/home/{YOUR USERNAME}/.config/sublime-text-3/Packages/` <br> and in Windows 
+`C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/` <br> and paste the cloned repository in this directory.
 * Now Setup Chrome so that Selenium may Connect to the existing Chrome Session.
-  *	First Make a directory in the desired location with name <strong> Google </strong> and make sure the path to chrome executable is added to the environment variable path.
+  *	First Make a directory in the desired location with name <strong> Google </strong> and make sure the path to <br> chrome executable is added to the environment variable path.
 
   * Now Close all the instances of the Google Chrome.
-  * In Linux run this command in your terminal
-  
- 	google-chrome --remote-debugging-port=9222 --user-data-dir="path/to/Google"
+  * In Linux run this command in your terminal <br>`google-chrome --remote-debugging-port=9222 --user-data-dir="path/to/Google"` <br>
 you can specify any port which is open but if you do then you need to change the <strong> port number </strong> in <strong> solve_it.py </strong> file.
  	
   * This command will open the browser and all the information of your login in Chrome and Codeforces will be Stored there. So you don't need to login when you open this session again. You need to log in only for the first type. 
