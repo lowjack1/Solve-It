@@ -14,12 +14,11 @@ Assuming Google Chrome and Python3 is installed in your system.
 * Copy urllib3 and selenium module of Python from Python library and paste it to `sublime-text-3/Lib/Python3.3` folder.
 * In Linux head over to `/home/{YOUR USERNAME}/.config/sublime-text-3/Packages/`and In Windows 
 `C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/` and paste the cloned repository in this directory.
-* Now Setup Chrome so that Selenium may Connect to the existing Chrome Session. </li>
-<ul>
-<li>	First Make a directory in the desired location with name <strong> Google </strong> and make sure the path to chrome executable is added to the environment variable path. </li>
+* Now Setup Chrome so that Selenium may Connect to the existing Chrome Session.
+-	First Make a directory in the desired location with name <strong> Google </strong> and make sure the path to chrome executable is added to the environment variable path.
 
-<li> Now Close all the instances of the Google Chrome. </li>
-<li> In Linux run this command in your terminal
+- Now Close all the instances of the Google Chrome.
+- In Linux run this command in your terminal
   
  	google-chrome --remote-debugging-port=9222 --user-data-dir="path/to/Google"
 you can specify any port which is open but if you do then you need to change the <strong> port number </strong> in <strong> solve_it.py </strong> file </li>
