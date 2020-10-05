@@ -51,7 +51,7 @@ class SolveItCommand(sublime_plugin.TextCommand):
     Submit solution from sublime by getting contest ID and problem ID
     from the user
     """
-    def run(self, edit):
+    def run(self, _):
         window = self.view.window()
         # Input Panel to get Contest ID and Problem ID from the user
         window.show_input_panel(
