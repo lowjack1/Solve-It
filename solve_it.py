@@ -4,10 +4,10 @@ from selenium.webdriver.chrome.options import Options
 import sublime
 import sublime_plugin
 
-'''
+"""
 Copy and Paste selinium module and urllib3 module of Python in
 "sublime-text-3/Lib/Python3.3" folder of sublime-text3
-'''
+"""
 
 
 def process(string):
@@ -39,7 +39,8 @@ def process(string):
             driver.find_element_by_class_name("submit").click()
         except Exception:
             # In case Codeforces is too busy or File is untitled.
-            sublime.error_message('Either Codeforces is too busy or File is Untitled.')
+            sublime.error_message('Either Codeforces is too busy  or \
+                File is Untitled.')
     except Exception:
         # In case Server is not active.
         sublime.error_message('Server is not active.')
@@ -53,7 +54,12 @@ class SolveItCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         window = self.view.window()
         # Input Panel to get Contest ID and Problem ID from the user
-        window.show_input_panel("Enter ContestID & ProblemID : ", "", self.on_done, self.on_change, self.on_cancel)
+        window.show_input_panel(
+            "Enter ContestID & ProblemID : ",
+            "",
+            self.on_done,
+            self.on_change,
+            self.on_cancel)
 
     def on_done(self, input_data):
         process(input_data)
