@@ -1,5 +1,7 @@
 # Solve It
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Code Grade](https://www.code-inspector.com/project/14400/status/svg)](https://frontend.code-inspector.com/public/project/14400/Solve-It/dashboard)
+![Code Quality Score](https://www.code-inspector.com/project/14400/score/svg)
 
 #### Solve It is a Sublime Text 3 plugin which is used to submit the solution of problems of Codeforces directly from the Sublime Text just by pressing ('CTRL + M') on (Windows or Linux) or ('Super + M') key on Mac OS.
 
