@@ -25,7 +25,7 @@ def process(string):
     _chrome_options.add_argument("--start-maximized")
     _chrome_options.add_experimental_option("debuggerAddress", executor_url)
     try:
-        driver = webdriver.Chrome(chrome_options=_chrome_options)
+        driver = webdriver.Chrome(options=_chrome_options)
         driver.implicitly_wait(30)
 
         try:
